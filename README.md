@@ -51,11 +51,11 @@ An overall **risk score** (sum of flag weights) determines the bank's risk tier.
 ## Usage
 
 1. Download the newest (or the one for the year you want to analyse) EBA Transparency Exercise CSV (market data) and save it as `tr_mrk.csv` in the project folder (it should be downloaded directly with this name)
-2. Ensure `USE_LOCAL = True` in the configuration section of `eba_risk_report.py`
+2. Ensure `USE_LOCAL = True` in the configuration section of `eba_market_risk.py`
 3. Run:
 
 ```bash
-python eba_risk_report.py
+python eba_market_risk.py
 ```
 
 ---
@@ -64,7 +64,7 @@ python eba_risk_report.py
 
 ```
 eba-bank-risk-monitor/
-├── eba_risk_report.py # Main pipeline script
+├── eba_market_risk.py # Main pipeline script
 ├── ## tr_mrk.csv # Input data (download separately)
 ├── eba_risk_summary.csv # Output: ranked risk summary (generated)
 ├── eba_risk_chart.png  # Output: multi-panel chart (generated)
